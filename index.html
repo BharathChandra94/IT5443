@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#">Home</a>
+        <a href="./resource.html">Resource</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./login.html">Login</a>
+      </div>
+      
+    <h1>Porsche</h1>
+    <img src="https://images-porsche.imgix.net/-/media/E969499404154DB79BAD58EF5CC8CFAB_82BBE0A2462E47C4B1DB34EA0B23B853_CZ25W12IX0010-911-carrera-gts-side?w=1400&q=45&crop=faces%2Centropy%2Cedges&auto=format" alt="car">
+    <p>
+        The new 911 GT3 RS is set up for performance – thanks to increased downforce and revised aerodynamics. Using all vehicle data, including longitudinal/lateral acceleration,<br/> accelerator/brake pedal position and friction values, even the position of the rear wing and front diffuser are automatically adjusted to the driving situation in split seconds by Porsche Active Aerodynamics (PAA) with DRS. Best prerequisites for the next flying lap.
+    </p>
+
+    <p>
+        The wide turbo body with air intake panel significantly contributes to the aerodynamic optimization of the 911 GT3 RS and reinforces the athletic appearance. It also opens up space for new, wider wheels that improve handling even further.
+    </p>
+    <a href="https://www.porsche.com/usa/models/911/911-gt3-rs/911-gt3-rs/">Know More </a>  
+
+    <h2>InnerHTML</h2>
+<button onclick="document.getElementById('myImage').src='https://images-porsche.imgix.net/-/media/E969499404154DB79BAD58EF5CC8CFAB_82BBE0A2462E47C4B1DB34EA0B23B853_CZ25W12IX0010-911-carrera-gts-side?w=1400&q=45&crop=faces,entropy,edges&auto=format'">change previous</button>
+
+<img id="myImage" src="https://files.porsche.com/filestore/image/multimedia/none/j1-taycan-modelimage-sideshot/model/e36a18ca-fffb-11eb-80dd-005056bbdc38;sR;twebp065/porsche-model.webp" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='https://files.porsche.com/filestore/image/multimedia/none/j1-taycan-modelimage-sideshot/model/e36a18ca-fffb-11eb-80dd-005056bbdc38;sR;twebp065/porsche-model.webp'">change next</button>
+<p>Change List</p>
+<ul id="myList">
+    <li>GT3</li>
+    <li>911</li>
+    <li>Camaero</li>
+  </ul>
+  <p>Click "Replace" to replace the first item in the the list.</p>
+
+<button onclick="myFunction()">Replace</button>
+</body>
+<script>
+    function myFunction() {
+const element = document.getElementById("myList").children[0];
+const newNode = document.createTextNode("Porsche");
+
+element.replaceChild(newNode, element.childNodes[0]);
+}
+</script>
+</html>
